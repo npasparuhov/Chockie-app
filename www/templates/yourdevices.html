@@ -1,0 +1,12 @@
+<ion-view view-title="Your Devices" hide-back-button="true">
+	<ion-content>
+		<h1>Your Devices: </h1>
+		<ion-list class="list icon-left list-inset">
+			<ion-item ng-repeat="AC in devices">{{AC.name}}</ion-item>
+			<ion-item class"item-icon-left" href="#/app/newdevicelist">
+			<i class="icon ion-plus-round"></i>
+			Add new Device
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
