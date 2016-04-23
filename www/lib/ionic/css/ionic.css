@@ -3110,7 +3110,7 @@ a.subdued {
       background-image: linear-gradient(180deg, #0a9ec7, #0a9ec7 50%, transparent 50%); }
   .bar.bar-assertive {
     border-color: #e42012;
-    background-color: #ef473a;
+    background-color: #EF473A;
     background-image: linear-gradient(0deg, #e42012, #e42012 50%, transparent 50%);
     color: #fff; }
     .bar.bar-assertive .title {
@@ -5021,10 +5021,10 @@ a.item-content {
   min-height: 72px; }
   .item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
     position: absolute;
-    top: 16px;
-    left: 16px;
-    max-width: 40px;
-    max-height: 40px;
+    top: 8px;
+    left: 12px;
+    max-width: 30px;
+    max-height: 30px;
     width: 100%;
     height: 100%;
     border-radius: 50%; }
@@ -5298,6 +5298,7 @@ a.item-content {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 0;
+  padding-right: 15px;
   margin-bottom: 20px; }
 
 .list:last-child {

@@ -1,0 +1,8 @@
+<ion-view view-title="TV Remote">
+	<ion-content class="padding">
+		<ion-list class="list">
+			<ion-item class="item item-divider">Operations</ion-item>
+			<ion-item ng-repeat="option in commands" ng-click="sendCommand(option.id)">{{option.title}}</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

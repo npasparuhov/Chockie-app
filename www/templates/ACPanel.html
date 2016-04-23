@@ -1,0 +1,26 @@
+<ion-view view-title="AC Remote">
+	<ion-content class="padding">
+		<div class="item range range-calm">
+  			<i class="icon ion-chevron-left"></i>16
+  			<input type="range" id="slider" min="16" max="30" step="1" ng-value="$root.temp" ng-model="$root.temp" onchange="sendCommand(404)">
+  			30<i class="icon ion-chevron-right"></i>     
+  			<button class="button button-fab icon-top ion-power button-balanced" ng-click="PowerOnOff()"></button> 
+		</div>
+		<div class="row responsive">
+  			<div class="col"><h2>{{temp}}</h2>
+  			</div>
+  			<div class="col">
+  				<ion-list class="list">
+					<ion-item-divider>Modes</ion-item-divider>
+					<ion-radio ng-repeat="mode in modes" name="group1" ng-click="sendCommand(404)" ng-value="mode.title" ng-model="modeOption">{{mode.title}}</ion-radio>
+				</ion-list>
+  			</div>
+  			<div class="col">
+  				<ion-list class="list">
+					<ion-item-divider>Fan</ion-item-divider>
+					<ion-radio ng-repeat="fan in fans" name="group2" ng-click="sendCommand(404)" ng-value="fan.id" ng-model="$root.fanOption">{{fan.title}}</ion-radio>
+				</ion-list>
+  			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,12 @@
+<ion-view view-title="Your Rooms" hide-back-button="true" ng-init="$root.typeOfDevice = null; $root.room = null; showNewRoom=true">
+
+	<ion-content class="had-header" style="background: url(img/background.png) no-repeat center center fixed; background-size: cover">
+
+		<ion-list class="animate-ripple">
+			<ion-item style="text-align: center" href="#/app/yourdevices" ng-click="$root.selectedRoom=item.$id; getDevices(item.$id)" class="card_devices ink" ng-repeat="item in rooms">{{item.$id}}</ion-item>
+		</ion-list>
+		
+		<button class="button card icon login-button ion-plus-round" ng-click="modal.show()"></button>
+
+	</ion-content>
+</ion-view>

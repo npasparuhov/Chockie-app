@@ -1,7 +1,7 @@
 {
-  "name": "myapp",
-  "version": "1.0.0",
-  "description": "MyApp: An Ionic project",
+  "name": "Chockie",
+  "version": "0.1",
+  "description": "Chockie App project",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
@@ -25,7 +25,8 @@
   "cordovaPlatforms": [
     {
       "platform": "android",
-      "locator": "browser"
+      "version": "5.0.0",
+      "locator": "android@5.0.0"
     }
   ]
 }

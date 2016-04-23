@@ -1,5 +1,19 @@
 <ion-view view-title="Settings">
-  	<ion-content>
-    	<h1>Settings</h1>
-  	</ion-content>
+  	<ion-content class='padding'>
+
+  	<!-- <div class="list padding-right">
+      	<ion-md-input placeholder="Email" ng-model="email" type="text"></ion-md-input>
+    	<ion-md-input placeholder="Password" ng-model="password" type="text"></ion-md-input>
+    	<ion-md-input placeholder="Password" ng-model="password" type="text"></ion-md-input>
+    </div>
+    -->
+    <div >
+    <ng-map default-style="true" center="current-location" zoom="16">
+    	<marker position="current" animation="Animation.BOUNCE"></marker>
+    </ng-map>
+	</div>
+
+  	</ion-content> 
+  	
+
 </ion-view>

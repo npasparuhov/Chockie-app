@@ -1,0 +1,27 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-header bar-positive">
+        <button class="button button-clear button-primary icon ion-arrow-left-c" ng-click="modal.hide()"></button>
+        <h1 class="title">Add New Device</h1>
+    </ion-header-bar>
+    <ion-content class="has-header padding" style="background-color: #006666">
+        <ion-list class="padding">
+
+            <ion-md-input placeholder="Name of the new room" ng-model="$root.room" ng-show="showNewRoom" type="text"></ion-md-input>
+            <div ng-show="showNewRoom">
+                <br><hr><br></div>
+
+            <label class="padding-right"> Type of device: </label>
+            <select ng-model="$root.typeOfDevice" ng-change="refreshBrands()" ng-options="type.$id for type in listOfTypeOfDevices">
+            </select><br><hr><br>
+
+            <label ng-show="$root.typeOfDevice"> Select brand: </label>
+            <select ng-show="$root.typeOfDevice" class="padding-right" ng-model="$root.brand" ng-options="type.name for type in brands">
+            </select>
+
+        </ion-list>
+
+        <div style="padding-left: 25%">
+            <button class="button login-button" ng-click="Submit()">Submit</button>
+        </div>
+    </ion-content>
+</ion-modal-view>
